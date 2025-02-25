@@ -4,9 +4,9 @@ import streamlit as st
 import level.helpers as H
 
 df = pd.read_csv("./data/levels.csv")
-bodyweight = st.sidebar.number_input(
-    "Enter Bodyweight", min_value=110, max_value=310, step=1
-)
+# bodyweight = st.sidebar.number_input(
+#     "Enter Bodyweight", min_value=110, max_value=310, step=1
+# )
 bodyweight = 200
 exercise = st.sidebar.selectbox("Exercises", options=df["Exercise"].unique())
 weight = st.sidebar.number_input("Enter Weight", min_value=0, step=5)
