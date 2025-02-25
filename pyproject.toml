@@ -6,7 +6,7 @@ authors = ["fhebal <ferdynandhebal@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.13"
+python = "^3.12.9"
 pandas = "^2.2.3"
 pre-commit = "^4.1.0"
 streamlit = "^1.42.2"
