@@ -12,6 +12,7 @@ exercise = st.sidebar.selectbox("Exercises", options=df["Exercise"].unique())
 weight = st.sidebar.number_input("Enter Weight", min_value=0, step=5)
 reps = st.sidebar.number_input("Enter Reps", min_value=0, step=1)
 
+
 orm = int(H.calculate_orm(weight, reps))
 level, level_orm = H.get_level(exercise, bodyweight, orm)
 next_level, next_level_orm = H.get_level_metadata(level, exercise, bodyweight)
